@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 48" width="1536" height="48" preserveAspectRatio="none">
+  <defs>
+    <filter id="ink" x="-5%" y="-50%" width="110%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <!-- Serpentine route -->
+  <path id="route" d="M10 24 Q200 6 380 26 T760 22 T1140 28 T1526 22" stroke="#D4A843" stroke-width="2" fill="none" opacity="0.85" filter="url(#ink)" stroke-dasharray="14 8">
+    <animate attributeName="stroke-dashoffset" from="0" to="-44" dur="3.2s" repeatCount="indefinite"/>
+  </path>
+  <!-- Coordinates labels -->
+  <g font-family="'Courier New', monospace" font-size="6" fill="#F5EDD8" opacity="0.55">
+    <text x="14" y="42">-31.42°S</text>
+    <text x="1450" y="42">-50.34°S</text>
+  </g>
+  <!-- Tiny van marker -->
+  <g>
+    <rect x="-6" y="-4" width="12" height="6" rx="1" fill="#8B1A2A">
+      <animateMotion dur="11s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#route"/>
+      </animateMotion>
+    </rect>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Norte argentino">
+  <defs>
+    <linearGradient id="nSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A1410"/>
+      <stop offset="50%" stop-color="#8B1A2A"/>
+      <stop offset="100%" stop-color="#D4A843"/>
+    </linearGradient>
+    <filter id="nInk"><feTurbulence baseFrequency="0.04" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#nSky)"/>
+  <!-- Stars -->
+  <g fill="#F5EDD8">
+    <circle cx="40" cy="40" r="1.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="30" r="0.9"><animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="50" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="350" cy="20" r="0.8"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.8s" repeatCount="indefinite"/></circle>
+  </g>
+  <!-- Cerro de los 7 colores layered -->
+  <path d="M0 220 L80 140 L160 200 L240 130 L320 190 L400 150 L400 400 L0 400 Z" fill="#8B1A2A" opacity="0.7" filter="url(#nInk)"/>
+  <path d="M0 250 L80 180 L160 230 L240 170 L320 220 L400 190 L400 400 L0 400 Z" fill="#D4A843" opacity="0.55" filter="url(#nInk)"/>
+  <path d="M0 280 L80 220 L160 260 L240 210 L320 250 L400 230 L400 400 L0 400 Z" fill="#2D4A3E" opacity="0.65" filter="url(#nInk)"/>
+  <path d="M0 320 L80 270 L160 300 L240 260 L320 290 L400 270 L400 400 L0 400 Z" fill="#1A1410" opacity="0.85" filter="url(#nInk)"/>
+  <!-- Llama silhouette -->
+  <g transform="translate(280 340)" fill="#1A1410">
+    <path d="M0 0 L0 -16 Q0 -22 5 -22 L8 -22 Q12 -22 12 -18 L12 -10 L16 -10 L16 -24 Q16 -28 19 -28 L22 -28 Q24 -28 24 -25 L24 -10 L28 -10 L28 0 L24 0 L24 4 L22 4 L22 0 L16 0 L16 4 L14 4 L14 0 L10 0 L10 4 L8 4 L8 0 L4 0 L4 4 L2 4 L2 0 Z"/>
+  </g>
+  <!-- Cardón cactus -->
+  <g fill="#2D4A3E" stroke="#1A1410" stroke-width="0.5">
+    <path d="M60 360 L60 310 Q60 305 64 305 Q68 305 68 310 L68 340 M60 335 Q60 325 52 325 Q48 325 48 332 L48 348 M68 325 Q68 318 76 318 Q80 318 80 325 L80 345"
+          stroke="#2D4A3E" stroke-width="5" fill="none"/>
+  </g>
+  <!-- Label -->
+  <g font-family="Georgia,serif">
+    <rect x="20" y="20" width="170" height="38" fill="#F5EDD8" opacity="0.85"/>
+    <text x="30" y="38" font-size="11" fill="#8B1A2A" letter-spacing="3" font-family="'Courier New',monospace">— PURMAMARCA —</text>
+    <text x="30" y="52" font-size="14" fill="#1A1410" letter-spacing="2">NORTE ARGENTINO</text>
+  </g>
+  <rect x="4" y="4" width="392" height="392" fill="none" stroke="#1A1410" stroke-width="2"/>
+  <rect x="10" y="10" width="380" height="380" fill="none" stroke="#D4A843" stroke-width="0.6" opacity="0.5"/>
+</svg>

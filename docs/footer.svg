@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 320" width="1536" height="320" role="img" aria-label="Caravana Club footer scene">
+  <defs>
+    <linearGradient id="fSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D0908"/>
+      <stop offset="60%" stop-color="#1A1410"/>
+      <stop offset="100%" stop-color="#2D4A3E"/>
+    </linearGradient>
+    <radialGradient id="fFireGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4A843" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#D4A843" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fBulbA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5EDD8"/>
+      <stop offset="60%" stop-color="#D4A843"/>
+      <stop offset="100%" stop-color="#D4A843" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fBulbB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5EDD8"/>
+      <stop offset="60%" stop-color="#7ECFD4"/>
+      <stop offset="100%" stop-color="#7ECFD4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fBulbC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5EDD8"/>
+      <stop offset="60%" stop-color="#8B1A2A"/>
+      <stop offset="100%" stop-color="#8B1A2A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="fInk"><feTurbulence baseFrequency="0.02" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter>
+    <filter id="bulbGlow"><feGaussianBlur stdDeviation="1.2"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1536" height="320" fill="url(#fSky)"/>
+
+  <!-- Stars -->
+  <g fill="#F5EDD8">
+    <circle cx="80" cy="30" r="0.9"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="220" cy="20" r="0.7"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="34" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="18" r="0.8"><animate attributeName="opacity" values="1;0.3;1" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="900" cy="36" r="0.9"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1120" cy="22" r="0.7"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="1320" cy="32" r="1"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="1460" cy="14" r="0.8"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.8s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Mountain silhouettes -->
+  <path d="M0 200 L120 140 L260 180 L420 120 L560 170 L720 130 L880 170 L1040 120 L1200 175 L1340 140 L1460 175 L1536 150 L1536 320 L0 320 Z" fill="#1A1410" opacity="0.65" filter="url(#fInk)"/>
+  <path d="M0 240 L100 200 L240 230 L400 190 L540 230 L680 200 L820 235 L980 195 L1120 235 L1280 210 L1420 240 L1536 220 L1536 320 L0 320 Z" fill="#1A1410" opacity="0.9" filter="url(#fInk)"/>
+
+  <!-- String lights garland — catenary curve across full width -->
+  <!-- Wire -->
+  <path id="garland" d="M0 60 Q384 120 768 80 T1536 60" stroke="#2D4A3E" stroke-width="1" fill="none" opacity="0.7"/>
+
+  <!-- Bulbs along garland — manually positioned to follow catenary -->
+  <g filter="url(#bulbGlow)">
+    <!-- left half -->
+    <g><circle cx="80" cy="70" r="4" fill="url(#fBulbA)"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.1s" repeatCount="indefinite"/></circle><line x1="80" y1="64" x2="80" y2="68" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="160" cy="80" r="4" fill="url(#fBulbB)"><animate attributeName="opacity" values="1;0.5;1" dur="2.6s" repeatCount="indefinite"/></circle><line x1="160" y1="74" x2="160" y2="78" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="240" cy="90" r="4" fill="url(#fBulbC)"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.3s" repeatCount="indefinite"/></circle><line x1="240" y1="84" x2="240" y2="88" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="320" cy="98" r="4" fill="url(#fBulbA)"><animate attributeName="opacity" values="1;0.6;1" dur="3.1s" repeatCount="indefinite"/></circle><line x1="320" y1="92" x2="320" y2="96" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="400" cy="104" r="4" fill="url(#fBulbB)"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.9s" repeatCount="indefinite"/></circle><line x1="400" y1="98" x2="400" y2="102" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="480" cy="108" r="4" fill="url(#fBulbC)"><animate attributeName="opacity" values="0.7;1;0.7" dur="2.7s" repeatCount="indefinite"/></circle><line x1="480" y1="102" x2="480" y2="106" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="560" cy="108" r="4" fill="url(#fBulbA)"><animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/></circle><line x1="560" y1="102" x2="560" y2="106" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="640" cy="106" r="4" fill="url(#fBulbB)"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.9s" repeatCount="indefinite"/></circle><line x1="640" y1="100" x2="640" y2="104" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="720" cy="100" r="4" fill="url(#fBulbA)"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite"/></circle><line x1="720" y1="94" x2="720" y2="98" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <!-- right half -->
+    <g><circle cx="800" cy="94" r="4" fill="url(#fBulbC)"><animate attributeName="opacity" values="1;0.5;1" dur="2.8s" repeatCount="indefinite"/></circle><line x1="800" y1="88" x2="800" y2="92" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="880" cy="90" r="4" fill="url(#fBulbB)"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.1s" repeatCount="indefinite"/></circle><line x1="880" y1="84" x2="880" y2="88" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="960" cy="86" r="4" fill="url(#fBulbA)"><animate attributeName="opacity" values="0.7;1;0.7" dur="3.2s" repeatCount="indefinite"/></circle><line x1="960" y1="80" x2="960" y2="84" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="1040" cy="80" r="4" fill="url(#fBulbC)"><animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/></circle><line x1="1040" y1="74" x2="1040" y2="78" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="1120" cy="74" r="4" fill="url(#fBulbB)"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.7s" repeatCount="indefinite"/></circle><line x1="1120" y1="68" x2="1120" y2="72" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="1200" cy="70" r="4" fill="url(#fBulbA)"><animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/></circle><line x1="1200" y1="64" x2="1200" y2="68" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="1280" cy="66" r="4" fill="url(#fBulbC)"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.9s" repeatCount="indefinite"/></circle><line x1="1280" y1="60" x2="1280" y2="64" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="1360" cy="62" r="4" fill="url(#fBulbB)"><animate attributeName="opacity" values="1;0.5;1" dur="2.3s" repeatCount="indefinite"/></circle><line x1="1360" y1="56" x2="1360" y2="60" stroke="#2D4A3E" stroke-width="0.5"/></g>
+    <g><circle cx="1440" cy="60" r="4" fill="url(#fBulbA)"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.6s" repeatCount="indefinite"/></circle><line x1="1440" y1="54" x2="1440" y2="58" stroke="#2D4A3E" stroke-width="0.5"/></g>
+  </g>
+
+  <!-- Fire glow -->
+  <ellipse cx="640" cy="270" rx="100" ry="40" fill="url(#fFireGlow)"/>
+
+  <!-- Logs and fire -->
+  <g transform="translate(640 270)">
+    <line x1="-22" y1="2" x2="22" y2="-2" stroke="#5C3621" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-18" y1="-2" x2="20" y2="4" stroke="#3C2418" stroke-width="5" stroke-linecap="round"/>
+    <path d="M0 -2 Q-10 -16 -6 -28 Q-2 -36 0 -42 Q2 -36 6 -28 Q10 -16 0 -2 Z" fill="#D4A843">
+      <animate attributeName="d"
+        values="M0 -2 Q-10 -16 -6 -28 Q-2 -36 0 -42 Q2 -36 6 -28 Q10 -16 0 -2 Z;
+                M0 -2 Q-12 -16 -8 -28 Q-4 -34 0 -38 Q4 -34 8 -28 Q12 -16 0 -2 Z;
+                M0 -2 Q-9 -16 -5 -28 Q-2 -36 0 -42 Q2 -36 5 -28 Q9 -16 0 -2 Z;
+                M0 -2 Q-10 -16 -6 -28 Q-2 -36 0 -42 Q2 -36 6 -28 Q10 -16 0 -2 Z"
+        dur="1.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 -2 Q-5 -14 -3 -22 Q-1 -28 0 -32 Q1 -28 3 -22 Q5 -14 0 -2 Z" fill="#F5EDD8" opacity="0.85">
+      <animate attributeName="opacity" values="0.5;0.95;0.4;0.5" dur="0.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Van under garland -->
+  <g transform="translate(800 230)">
+    <!-- Body -->
+    <rect x="0" y="0" width="160" height="48" rx="8" fill="#F5EDD8" stroke="#D4A843" stroke-width="1.5"/>
+    <!-- Driver cabin -->
+    <rect x="118" y="-22" width="46" height="22" rx="4" fill="#F5EDD8" stroke="#D4A843" stroke-width="1.5"/>
+    <!-- Front windshield -->
+    <rect x="124" y="-18" width="36" height="14" rx="1" fill="#7ECFD4" opacity="0.7"/>
+    <!-- Side windows -->
+    <rect x="14" y="8" width="30" height="18" rx="1" fill="#7ECFD4" opacity="0.6">
+      <animate attributeName="fill" values="#7ECFD4;#D4A843;#7ECFD4" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="52" y="8" width="30" height="18" rx="1" fill="#7ECFD4" opacity="0.6">
+      <animate attributeName="fill" values="#7ECFD4;#F5EDD8;#7ECFD4" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="88" y="8" width="22" height="18" rx="1" fill="#7ECFD4" opacity="0.6">
+      <animate attributeName="fill" values="#7ECFD4;#D4A843;#7ECFD4" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Wheels -->
+    <circle cx="30" cy="50" r="9" fill="#1A1410" stroke="#F5EDD8" stroke-width="0.8"/>
+    <circle cx="30" cy="50" r="3" fill="#F5EDD8"/>
+    <circle cx="138" cy="50" r="9" fill="#1A1410" stroke="#F5EDD8" stroke-width="0.8"/>
+    <circle cx="138" cy="50" r="3" fill="#F5EDD8"/>
+    <!-- Logo stripe -->
+    <rect x="6" y="32" width="148" height="2" fill="#8B1A2A"/>
+    <text x="80" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="6" fill="#8B1A2A" letter-spacing="2">LA CARAVANA CLUB</text>
+    <!-- Surfboard on roof -->
+    <ellipse cx="80" cy="-2" rx="60" ry="3" fill="#8B1A2A" opacity="0.85"/>
+  </g>
+
+  <!-- Pines silhouette -->
+  <g fill="#1A1410">
+    <path d="M180 280 L172 256 L176 256 L168 232 L172 232 L165 210 L195 210 L188 232 L192 232 L184 256 L188 256 L180 280 Z"/>
+    <path d="M1280 285 L1272 260 L1276 260 L1268 236 L1272 236 L1265 214 L1295 214 L1288 236 L1292 236 L1284 260 L1288 260 L1280 285 Z"/>
+    <path d="M1420 290 L1414 268 L1418 268 L1410 246 L1414 246 L1408 226 L1432 226 L1426 246 L1430 246 L1422 268 L1426 268 L1420 290 Z"/>
+  </g>
+
+  <!-- Tagline -->
+  <g text-anchor="middle" font-family="Georgia,serif">
+    <text x="768" y="305" font-size="11" fill="#F5EDD8" opacity="0.6" letter-spacing="6" font-family="'Courier New',monospace">SOUTH HUSTLES STUDIO · CÓRDOBA · ARGENTINA · MMXXVI</text>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Sierras de Córdoba">
+  <defs>
+    <linearGradient id="sSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B1A2A"/>
+      <stop offset="50%" stop-color="#D4A843"/>
+      <stop offset="100%" stop-color="#F5EDD8"/>
+    </linearGradient>
+    <filter id="sInk"><feTurbulence baseFrequency="0.03" numOctaves="2" seed="6"/><feDisplacementMap in="SourceGraphic" scale="4"/></filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#sSky)"/>
+  <!-- Sun -->
+  <circle cx="200" cy="140" r="50" fill="#D4A843" opacity="0.9">
+    <animate attributeName="r" values="50;54;50" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Sun rays -->
+  <g stroke="#F5EDD8" stroke-width="1" opacity="0.4">
+    <line x1="200" y1="60" x2="200" y2="80"/>
+    <line x1="130" y1="140" x2="150" y2="140"/>
+    <line x1="250" y1="140" x2="270" y2="140"/>
+    <line x1="150" y1="90" x2="160" y2="100"/>
+    <line x1="250" y1="90" x2="240" y2="100"/>
+  </g>
+  <!-- Distant sierras -->
+  <path d="M0 240 L80 200 L160 230 L240 190 L320 235 L400 210 L400 400 L0 400 Z" fill="#8B1A2A" opacity="0.55" filter="url(#sInk)"/>
+  <!-- Mid sierras (rounded Córdoba shape) -->
+  <path d="M0 290 Q60 240 140 270 Q220 250 280 280 Q340 260 400 290 L400 400 L0 400 Z" fill="#2D4A3E" opacity="0.85" filter="url(#sInk)"/>
+  <!-- Foreground -->
+  <path d="M0 340 Q100 320 200 335 Q300 320 400 340 L400 400 L0 400 Z" fill="#1A1410" filter="url(#sInk)"/>
+  <!-- Cactus/native flora -->
+  <g fill="#2D4A3E" stroke="#1A1410" stroke-width="1">
+    <path d="M60 360 L60 330 Q60 322 68 322 Q72 322 72 328 L72 340 M60 340 Q60 332 52 332 Q48 332 48 338 L48 348" fill="none" stroke="#2D4A3E" stroke-width="3"/>
+    <path d="M340 365 L340 332 Q340 324 348 324 Q352 324 352 330 L352 342" fill="none" stroke="#2D4A3E" stroke-width="3"/>
+  </g>
+  <!-- Tiny van on horizon -->
+  <g transform="translate(195 305)">
+    <rect width="14" height="6" rx="0.5" fill="#1A1410"/>
+    <rect x="9" y="-3" width="5" height="3" rx="0.5" fill="#1A1410"/>
+    <circle cx="3" cy="6" r="1.3" fill="#1A1410"/>
+    <circle cx="11" cy="6" r="1.3" fill="#1A1410"/>
+  </g>
+  <!-- Label -->
+  <g font-family="Georgia,serif">
+    <rect x="20" y="20" width="180" height="38" fill="#1A1410" opacity="0.75"/>
+    <text x="30" y="38" font-size="11" fill="#D4A843" letter-spacing="3" font-family="'Courier New',monospace">— CAMINO ALTAS —</text>
+    <text x="30" y="52" font-size="14" fill="#F5EDD8" letter-spacing="2">SIERRAS DE CÓRDOBA</text>
+  </g>
+  <rect x="4" y="4" width="392" height="392" fill="none" stroke="#1A1410" stroke-width="2"/>
+  <rect x="10" y="10" width="380" height="380" fill="none" stroke="#D4A843" stroke-width="0.6" opacity="0.5"/>
+</svg>

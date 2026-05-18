@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Fogata">
+  <defs>
+    <radialGradient id="fglow" cx="50%" cy="65%" r="50%">
+      <stop offset="0%" stop-color="#D4A843" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#8B1A2A" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#8B1A2A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="0.4"/></filter>
+  </defs>
+  <!-- Frame -->
+  <circle cx="50" cy="50" r="48" fill="#1A1410" stroke="#D4A843" stroke-width="1"/>
+  <circle cx="50" cy="50" r="48" fill="url(#fglow)"/>
+  <!-- Ground -->
+  <ellipse cx="50" cy="78" rx="34" ry="3" fill="#2D4A3E" opacity="0.5"/>
+  <!-- Logs -->
+  <line x1="32" y1="76" x2="68" y2="74" stroke="#8B1A2A" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="34" y1="74" x2="66" y2="76" stroke="#5C3621" stroke-width="3" stroke-linecap="round"/>
+  <line x1="38" y1="72" x2="62" y2="73" stroke="#3C2418" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Flames -->
+  <g filter="url(#soft)">
+    <path d="M50 70 Q42 58 45 48 Q47 42 50 38 Q53 42 55 48 Q58 58 50 70 Z" fill="#D4A843">
+      <animate attributeName="d"
+        values="M50 70 Q42 58 45 48 Q47 42 50 38 Q53 42 55 48 Q58 58 50 70 Z;
+                M50 70 Q40 58 44 46 Q48 40 50 34 Q52 40 56 46 Q60 58 50 70 Z;
+                M50 70 Q43 58 46 50 Q48 44 50 40 Q52 44 54 50 Q57 58 50 70 Z;
+                M50 70 Q42 58 45 48 Q47 42 50 38 Q53 42 55 48 Q58 58 50 70 Z"
+        dur="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.85;1;0.78;0.85" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M50 68 Q46 60 48 52 Q49 48 50 44 Q51 48 52 52 Q54 60 50 68 Z" fill="#F5EDD8">
+      <animate attributeName="d"
+        values="M50 68 Q46 60 48 52 Q49 48 50 44 Q51 48 52 52 Q54 60 50 68 Z;
+                M50 68 Q45 60 47 50 Q49 46 50 42 Q51 46 53 50 Q55 60 50 68 Z;
+                M50 68 Q46 60 48 53 Q49 49 50 46 Q51 49 52 53 Q54 60 50 68 Z;
+                M50 68 Q46 60 48 52 Q49 48 50 44 Q51 48 52 52 Q54 60 50 68 Z"
+        dur="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.9;0.5;0.6" dur="0.9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <!-- Sparks -->
+  <g fill="#D4A843">
+    <circle cx="46" cy="30" r="0.8"><animate attributeName="cy" from="40" to="14" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="54" cy="26" r="0.6"><animate attributeName="cy" from="38" to="10" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="50" cy="22" r="0.7"><animate attributeName="cy" from="36" to="8" dur="3.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="3.1s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>
