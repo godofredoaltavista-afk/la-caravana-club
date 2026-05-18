@@ -1,0 +1,16 @@
+node_modules/
+*.log
+.DS_Store
+.vscode/
+.idea/
+.env
+.env.local
+.vercel
+*.pdf
+all_nodes.json
+references/
+stickers-svg/
+caravanaaa/
+demo1/
+*.tmp
+Thumbs.db

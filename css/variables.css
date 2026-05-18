@@ -1,0 +1,159 @@
+/* ============================================================
+   LA CARAVANA CLUB — Design System Variables
+   Van Life Experience Córdoba · Human-first editorial brand
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@400;600;700&display=swap');
+
+:root {
+  /* ── PALETA PRINCIPAL ── */
+  --crema:          #F5EDD8;
+  --crema-oscura:   #E8DCC0;
+  --crema-papel:    #EDE3C8;
+  --celeste:        #7ECFD4;
+  --celeste-claro:  #A8E0E4;
+  --turquesa:       #4BADB5;
+  --borde:          #8B1A2A;
+  --borde-oscuro:   #6B0F1C;
+  --borde-claro:    #C4404F;
+  --piedra:         #6B6560;
+  --piedra-claro:   #9A938E;
+  --piedra-oscuro:  #4A3E38;
+  --tinta:          #1A1410;
+  --tinta-suave:    #2E2520;
+  --verde-ingles:   #2D4A3E;
+  --verde-claro:    #4A7060;
+  --dorado:         #D4A843;
+  --dorado-claro:   #E8C870;
+  --dorado-oscuro:  #A8832A;
+  --blanco:         #FFFFFF;
+  --blanco-papel:   #FAFAF7;
+
+  /* ── TIPOGRAFÍA ── */
+  --font-editorial: 'Playfair Display', 'Georgia', serif;
+  --font-body:      'Inter', system-ui, sans-serif;
+  --font-mono:      'JetBrains Mono', monospace;
+  --font-handcraft: 'Caveat', cursive; /* para notas, anotaciones, stamps */
+
+  /* ── ESCALA TIPOGRÁFICA ── */
+  --text-xs:   0.75rem;   /* 12px — labels, stamps */
+  --text-sm:   0.875rem;  /* 14px — captions */
+  --text-base: 1rem;      /* 16px — body */
+  --text-lg:   1.125rem;  /* 18px — body destacado */
+  --text-xl:   1.25rem;   /* 20px — subtítulos */
+  --text-2xl:  1.5rem;    /* 24px */
+  --text-3xl:  1.875rem;  /* 30px */
+  --text-4xl:  2.25rem;   /* 36px */
+  --text-5xl:  3rem;      /* 48px */
+  --text-6xl:  3.75rem;   /* 60px */
+  --text-hero: clamp(3.5rem, 10vw, 8rem); /* títulos hero fluidos */
+
+  /* ── ESPACIADO ── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --section-pad: clamp(4rem, 10vw, 9rem);
+
+  /* ── BORDER RADIUS ── */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-2xl:  40px;
+  --radius-pill: 999px;
+  --radius-icon: 18px; /* botones rombo/cuadrado gordo con radius */
+
+  /* ── SOMBRAS ── */
+  --shadow-paper: 2px 3px 8px rgba(26,20,16,0.15), 4px 6px 20px rgba(26,20,16,0.08);
+  --shadow-card:  0 8px 32px rgba(26,20,16,0.12);
+  --shadow-lift:  0 20px 60px rgba(26,20,16,0.20);
+  --shadow-stamp: 2px 2px 0px rgba(139,26,42,0.4); /* sello bordó */
+
+  /* ── TEXTURAS (CSS puras, sin imagen) ── */
+  --grain-opacity: 0.035;
+
+  /* ── TRANSICIONES ── */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:    cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-inout: cubic-bezier(0.83, 0, 0.17, 1);
+  --duration-fast:   150ms;
+  --duration-base:   300ms;
+  --duration-slow:   600ms;
+  --duration-x-slow: 900ms;
+
+  /* ── Z-INDEX SCALE ── */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-overlay: 100;
+  --z-modal:   200;
+  --z-nav:     300;
+  --z-toast:   400;
+}
+
+/* ── MODOS TEMÁTICOS ── */
+
+/* MODO MONTAÑA — negro tinta, texto crema, accent dorado */
+[data-theme="montana"],
+.theme-montana {
+  --bg-primary:    #1A1410;
+  --bg-secondary:  #2A2420;
+  --bg-tertiary:   #3A3028;
+  --text-primary:  #F5EDD8;
+  --text-secondary: #9A938E;
+  --text-accent:   #D4A843;
+  --border-color:  rgba(245,237,216,0.15);
+  --card-bg:       rgba(42,36,32,0.9);
+  --icon-bg:       #2D4A3E;
+  --icon-accent:   #D4A843;
+}
+
+/* MODO CIELO — crema/blanco, texto tinta, accent celeste */
+[data-theme="cielo"],
+.theme-cielo {
+  --bg-primary:    #F5EDD8;
+  --bg-secondary:  #EDE3C8;
+  --bg-tertiary:   #E0D4B0;
+  --text-primary:  #1A1410;
+  --text-secondary: #6B6560;
+  --text-accent:   #4BADB5;
+  --border-color:  rgba(26,20,16,0.12);
+  --card-bg:       rgba(255,255,255,0.85);
+  --icon-bg:       #7ECFD4;
+  --icon-accent:   #1A1410;
+}
+
+/* MODO PIEDRA — bordó oscuro, texto crema, accent celeste */
+[data-theme="piedra"],
+.theme-piedra {
+  --bg-primary:    #3D1520;
+  --bg-secondary:  #2D0D16;
+  --bg-tertiary:   #4D2030;
+  --text-primary:  #F5EDD8;
+  --text-secondary: #C8B898;
+  --text-accent:   #7ECFD4;
+  --border-color:  rgba(245,237,216,0.2);
+  --card-bg:       rgba(61,21,32,0.9);
+  --icon-bg:       #8B1A2A;
+  --icon-accent:   #F5EDD8;
+}
+
+/* Default: cielo */
+:root {
+  --bg-primary:    #F5EDD8;
+  --bg-secondary:  #EDE3C8;
+  --bg-tertiary:   #E0D4B0;
+  --text-primary:  #1A1410;
+  --text-secondary: #6B6560;
+  --text-accent:   #4BADB5;
+  --border-color:  rgba(26,20,16,0.12);
+  --card-bg:       rgba(255,255,255,0.85);
+  --icon-bg:       #7ECFD4;
+  --icon-accent:   #1A1410;
+}
